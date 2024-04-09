@@ -1,0 +1,107 @@
+
+.profile-image {
+    width: 20vw; /* Makes the image responsive */
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Avoids inline spacing issues */
+    margin-bottom: 2vh; /* Space after the image */
+    margin-left: auto; /* Automatically adjusts the left margin */
+    margin-right: auto; /* Automatically adjusts the right margin */
+}
+
+.sidebar-nav {
+    list-style-type: none; /* remove default list styling */
+    padding: 0;
+}
+
+.sidebar-nav li a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none; /* remove default link underline */
+    /* Add additional styling as needed */
+}
+.sidebar-nav li {
+    margin-bottom: 0.5vh; /* Space between sidebar items */
+}
+.sidebar-nav ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centers text within the container */
+}
+.sidebar-nav li a:link,
+.sidebar-nav li a:visited,
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    color: inherit; /* This will make the color the same as the parent element */
+    text-decoration: none; /* Removes underline from links */
+}
+
+
+.nameMail{
+    text-align: center; /* Centers text within the container */
+}
+.sidebar-icons a {
+    margin: 0 0.5em; /* Adds horizontal space between icons using em */
+    display: inline-block; /* Allows inline placement of icons */
+    vertical-align: middle; /* Aligns icons to the middle if they are of different heights */
+}
+.sidebar-icons img {
+    width:  auto;/* Example size, adjust as necessary */
+    height: 2em; /* Maintains aspect ratio */
+}
+.sidebar-icons {
+    text-align: center; /* Centers the icons container */
+    padding-bottom: 2vh; /* Adds some space below the icons */
+    height: auto;
+    margin-left: auto; /* Automatically adjusts the left margin */
+    margin-right: auto; /* Automatically adjusts the right margin */
+}
+
+.sidebar {
+    /* background-color:#F5F5F5; */
+    background-color:#32638e;
+    padding-top: 2vh;
+    width: 100%; /* Full width on small screens */
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    left: -100%; /* Start off-screen to the left */
+    z-index: 2; /* Ensure sidebar is above other content but below the toggle button */
+}
+
+
+#sidebarToggle {
+    display: none; /* Hidden by default */
+    position: fixed;
+    width: 100%;
+    z-index: 1100; /* Ensure button is above the sidebar */
+    cursor: pointer;
+    align-items: center;
+    border: none; /* Remove border */
+    background:gainsboro; /* Remove default background */
+    padding: 0;
+}
+
+#sidebarToggle img {
+    width: 8vw;
+    height: auto;
+}
+@media (max-width: 768px) { /* small screen */
+    #sidebarToggle {
+        display: block;
+    }
+    .sidebar {
+        margin-top: 8vw;
+    }
+    .profile-image {
+        width: 40vw; 
+    }
+}
+@media (min-width: 769px) { /* wide screen */
+    .sidebar {
+        width: 25vw; /* Adjust width as needed */
+        left: 0; /* Sidebar is always visible */
+        margin-top: 0vh;
+    }
+
+}

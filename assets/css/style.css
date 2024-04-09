@@ -1,0 +1,64 @@
+.content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+.content {
+    flex-grow: 1; /* Takes the remaining width */
+    margin-left: 30vw; /* 25 sidebar width + 5 for open space */
+    margin-right: 5vw; /* Equal to the width of the sidebar */
+    font-family: 'Noto Sans', sans-serif;
+    min-height: 80vh;
+  
+}
+body {
+    display: flex;
+    margin: 0; /* Removes default margin */
+    height: 100vh; /* Sets body to full viewport height */
+ 
+    padding: 0;
+
+   /* background-color:#F5F5F5; */
+ 
+}
+.mainPage{
+    padding-bottom: 12vh;
+    padding-top: 2vh;
+
+}
+.header{
+    display: flex; 
+    align-items: center; 
+    margin-left: 0; 
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+
+}
+
+
+.portraitImg{
+    width: 34vw
+}
+
+.landscapeImg{
+    width: 60vw
+}
+.landscapeImg, .portraitImg{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
+
+
+@media (max-width: 768px) { /* small screen */
+    .content {
+        margin-left: 5vw; /* Adjusts the left margin to match the reduced sidebar or provide some spacing */
+        margin-right: 5vw; /* Ensures there's always a minimum margin on the right, regardless of viewport width */
+        margin-top: 10vh; /* 8 for toggle bar and 2 for space between text and toggle*/
+    }
+    .responsiveImg {
+        width: 70vw; 
+    }
+}

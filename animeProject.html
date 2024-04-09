@@ -1,0 +1,34 @@
+---
+layout: page
+title: Recommendation System
+permalink: /animeProject/
+---
+<div class="mainPage">
+
+You can see this project on <a href="https://www.kaggle.com/code/lachimolalala/anime-recommendation-system">Kaggle</a>. In my Anime Recommendation System project, I dive into creating a way for fans to find animes they'll love. I used five different methods to suggest animes based on what users like:
+</br></br>
+<b>Synopsis-Based Recommendation</b>: I utilized Term Frequency-Inverse Document Frequency (TF-IDF) to analyze the narratives of animes. This technique helps identify shows with similar storylines to what you enjoy, ensuring a more personalized recommendation.
+</br></br>
+<b>Attribute-Based Recommendation</b>: By employing CountVectorizer, I analyzed animes based on specific attributes such as genre, producers, and number of episodes. This method allows for recommendations that align closely with your preferences in terms of anime content and style.
+</br></br>
+<b>Hybrid Recommendation</b>: This approach merges the insights gained from both synopsis and attribute analysis to offer a well-rounded selection of animes. It’s designed to leverage the strengths of both methods to improve the accuracy of the recommendations you receive.
+</br></br>
+<b>Item-Based Collaborative Filtering</b>: Focusing on the relationships between animes, this method recommends titles by evaluating their similarities based on user ratings. It’s an effective way to suggest animes that resonate with your past viewing experiences.
+</br></br>
+<h2>Techniques</h2>
+Throughout the project, I employed Python and leveraged libraries like Pandas for data manipulation, scikit-learn for applying machine learning techniques, and NumPy for handling numerical data. The project was rigorously tested with extensive data from MyAnimeList, featuring a wide array of animes and user feedback to fine-tune the recommendation accuracy.
+</br></br>
+<h2>Example</h2>
+Here's a quick look at my project, where I tried out different ways to recommend anime based on the popular series 'One Piece.'
+
+First up, I used a system that checks anime stories to find matches. It mostly suggested 'One Piece' movies or special episodes. But, the 8th suggestion was the first one not directly linked to 'One Piece.' It was 'Kaizoku Ouji,' an anime about pirates and treasure hunts, similar to 'One Piece.' This showed how well the system can pick out stories with similar themes.
+<img  class="responsiveImg portraitImg" src="/assets/images/synopsisBased.png">
+Next, I tried another method that looks at details like how popular an anime is, its genre, how many episodes it has, and who made it. This time, I got a lot of recommendations for 'Dragon Ball.' When I looked closer, I saw that 'Dragon Ball' and 'One Piece' have a lot in common, like the same producers, studios, age ratings and genres, which is why they were often suggested together.
+<img class="responsiveImg portraitImg"  src="/assets/images/attributeBased.png">
+Finally, I looked at what animes people who like 'One Piece' also enjoy. I used two different ways to compare these animes, called Pearson and Cosine. The Pearson way ended up recommending more 'One Piece' movies. But it also suggested other popular animes like 'Naruto,' 'Bleach,' and 'Fairy Tail' that fans often watch too. The Cosine way gave a wider variety of suggestions, not just 'One Piece' movies, which seemed more on point for what other fans might like.
+<img class="responsiveImg landscapeImg" src="/assets/images/recomByItem.png">
+
+The project really opened my eyes to how different methods can spotlight the unique qualities of anime for enthusiasts, by aligning their preferences with new discoveries. It was a thrilling intersection of data science and AI, not merely recommending a series, but shaping a personalized anime journey through sophisticated analytics.
+
+</br>
+</div>

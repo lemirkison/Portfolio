@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Head content such as title, link to css files etc -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,351;1,351&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&family=Reddit+Mono:wght@200..900&family=Roboto+Condensed:ital,wght@0,351;1,351&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/sidebar.css">
+<link rel="stylesheet" href="/assets/css/styleProject.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="{{ site.baseurl }}/assets/js/script.js"></script>
+</head>
+<body>
+    
+    <button  type="button" id="sidebarToggle"><img src="/assets/images/menu.png"/></button>
+    
+    {% include sidebar.html %}
+    <div class="content">
+        {{ content }} <!-- The page content will be inserted here -->
+    </div>
+</body>
+</html>

@@ -7,36 +7,44 @@ permalink: /projects/
 <div class="mainPage">
     <div class="card-container">
       
+         {% capture proj1Url %}{{ site.baseurl }}/animeProject{% endcapture %}
+         {% capture proj1UrlImg %}{{ site.baseurl }}/assets/images/anime.webp{% endcapture %}
         {% include card.html 
-            link="/animeProject" 
-            image="/assets/images/anime.webp" 
+            link=proj1Url
+            image=proj1UrlImg
             alt="Project Image" 
             title="Anime Recommendation System" 
             description="Developed a comprehensive anime recommendation system applying five different methodologies, including Item-Based Collaborative Filtering and Synopsis-Based Recommendation, to accommodate diverse user preferences." 
             hashtags="#CollaborativeFiltering #SynopsisMatching #AttributeBasedFiltering"
          %}
 
+         {% capture proj1Url %}{{ site.baseurl }}/unblur{% endcapture %}
+         {% capture proj1UrlImg %}{{ site.baseurl }}/assets/images/musicSheet.jpg{% endcapture %}
          {% include card.html 
-            link="project-link.html" 
-            image="/assets/images/musicSheet.jpg" 
+            link=proj1Url
+            image=proj1UrlImg
             alt="Project Image" 
             title="Music Sheet Unblur" 
             description="Designed a PyTorch-based CNN model to enhance the clarity of blurred music sheets, improving readability and performance for musicians." 
             hashtags="#DataScience #MachineLearning"
          %}
 
+         {% capture proj1Url %}{{ site.baseurl }}/sentiment{% endcapture %}
+         {% capture proj1UrlImg %}{{ site.baseurl }}/assets/images/sentiment.PNG{% endcapture %}
          {% include card.html 
-            link="project-link.html" 
-            image="/assets/images/sentiment.PNG" 
+            link=proj1Url
+            image=proj1UrlImg
             alt="Project Image" 
             title="Ratings Sentiment Analysis" 
             description="This Kaggle project investigates an Amazon toy category dataset to reveal how product ratings are influenced by reviews, seller information, and product descriptions, utilizing sentiment analysis to predict ratings impact." 
             hashtags="#DataScience #MachineLearning"
          %}
 
+         {% capture proj1Url %}{{ site.baseurl }}/viz-cnn{% endcapture %}
+         {% capture proj1UrlImg %}{{ site.baseurl }}/assets/images/visualization.PNG{% endcapture %}
          {% include card.html 
-            link="project-link.html" 
-            image="/assets/images/visualization.PNG" 
+            link=proj1Url
+            image=proj1UrlImg
             alt="Project Image" 
             title="Visualization of Neural Networks" 
             description="Utilized libraries to apply dimensionality reduction techniques such as PCA, t-SNE, and UMAP to visualize 10-dimensional image representations from the MNIST dataset, offering insights into neural network image classification." 

@@ -22,11 +22,11 @@ Throughout the project, I employed Python and leveraged libraries like Pandas fo
 Here's a quick look at my project, where I tried out different ways to recommend anime based on the popular series 'One Piece.'
 
 First up, I used a system that checks anime stories to find matches. It mostly suggested 'One Piece' movies or special episodes. But, the 8th suggestion was the first one not directly linked to 'One Piece.' It was 'Kaizoku Ouji,' an anime about pirates and treasure hunts, similar to 'One Piece.' This showed how well the system can pick out stories with similar themes.
-<img  class="responsiveImg portraitImg" src="/assets/images/synopsisBased.png">
+<img  class="responsiveImg portraitImg" src="{{ site.baseurl }}/assets/images/synopsisBased.png">
 Next, I tried another method that looks at details like how popular an anime is, its genre, how many episodes it has, and who made it. This time, I got a lot of recommendations for 'Dragon Ball.' When I looked closer, I saw that 'Dragon Ball' and 'One Piece' have a lot in common, like the same producers, studios, age ratings and genres, which is why they were often suggested together.
-<img class="responsiveImg portraitImg"  src="/assets/images/attributeBased.png">
+<img class="responsiveImg portraitImg"  src="{{ site.baseurl }}/assets/images/attributeBased.png">
 Finally, I looked at what animes people who like 'One Piece' also enjoy. I used two different ways to compare these animes, called Pearson and Cosine. The Pearson way ended up recommending more 'One Piece' movies. But it also suggested other popular animes like 'Naruto,' 'Bleach,' and 'Fairy Tail' that fans often watch too. The Cosine way gave a wider variety of suggestions, not just 'One Piece' movies, which seemed more on point for what other fans might like.
-<img class="responsiveImg landscapeImg" src="/assets/images/recomByItem.png">
+<img class="responsiveImg landscapeImg" src="{{ site.baseurl }}/assets/images/recomByItem.png">
 
 The project really opened my eyes to how different methods can spotlight the unique qualities of anime for enthusiasts, by aligning their preferences with new discoveries. It was a thrilling intersection of data science and AI, not merely recommending a series, but shaping a personalized anime journey through sophisticated analytics.
 

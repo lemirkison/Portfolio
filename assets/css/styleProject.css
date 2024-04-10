@@ -6,7 +6,6 @@
   }
   
   .card {
-    background-color: white;
     border: 1px solid #ccc;
     border-radius: 0.5rem; /* REM units for scalable border-radius */
     cursor: pointer;

@@ -60,42 +60,67 @@
 
 .sidebar {
     /* background-color:#F5F5F5; */
-    background-color:#32638e;
+    background-color:#dddada;
+    /* background-color:#32638e; */
+
     padding-top: 2vh;
     width: 100%; /* Full width on small screens */
     height: 100vh; /* Full viewport height */
     position: fixed;
     left: -100%; /* Start off-screen to the left */
     z-index: 2; /* Ensure sidebar is above other content but below the toggle button */
+    top: 0;
 }
 
 
 #sidebarToggle {
     display: none; /* Hidden by default */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start;
     position: fixed;
     width: 100%;
-    z-index: 1100; /* Ensure button is above the sidebar */
+    height: 11vw;
+    z-index: 2; /* Ensure button is above the sidebar */
     cursor: pointer;
-    align-items: center;
     border: none; /* Remove border */
-    background:gainsboro; /* Remove default background */
+    background: #dddada; /* Remove default background */
+    /* border-bottom: 2px solid #b5b5b5;  */
     padding: 0;
+    margin-top: 0vw;
+    top: 0;
+    padding-left: 5vw;
+
 }
 
 #sidebarToggle img {
     width: 8vw;
     height: auto;
 }
+#sidebarToggleHidden{
+    display: none;
+}
 @media (max-width: 768px) { /* small screen */
     #sidebarToggle {
-        display: block;
-    }
+        display: flex;
+    }   
     .sidebar {
-        margin-top: 8vw;
+        margin-top: 11vw;
     }
     .profile-image {
         width: 40vw; 
     }
+
+    .sidebar-home {
+        position: relative;
+        display: block; /* Show sidebar on home page */
+        width: 100vw; /* Full width */
+        /* Any other styles to make it look good at the top */
+        left: 0;
+        z-index: 1;
+        top: 0;
+        margin-top: 0vh;
+        height: 70vh;
+      }
 }
 @media (min-width: 769px) { /* wide screen */
     .sidebar {

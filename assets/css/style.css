@@ -10,22 +10,18 @@
     margin-left: 30vw; /* 25 sidebar width + 5 for open space */
     margin-right: 5vw; /* Equal to the width of the sidebar */
     font-family: 'Noto Sans', sans-serif;
-    min-height: 80vh;
+    
   
 }
 body {
-    display: flex;
+    display: block;
     margin: 0; /* Removes default margin */
     height: 100vh; /* Sets body to full viewport height */
- 
-    padding: 0;
-
-   /* background-color:#F5F5F5; */
- 
+    padding: 0; 
 }
 .mainPage{
     padding-bottom: 12vh;
-    padding-top: 2vh;
+    /* padding-top: 2vh; */
 
 }
 .header{
@@ -36,7 +32,6 @@ body {
     margin-bottom: 2vh;
 
 }
-
 
 .portraitImg{
     width: 34vw
@@ -56,7 +51,7 @@ body {
     .content {
         margin-left: 5vw; /* Adjusts the left margin to match the reduced sidebar or provide some spacing */
         margin-right: 5vw; /* Ensures there's always a minimum margin on the right, regardless of viewport width */
-        margin-top: 10vh; /* 8 for toggle bar and 2 for space between text and toggle*/
+        margin-top: 14vw; /* 8 for toggle bar and 2 for space between text and toggle*/
     }
     .responsiveImg {
         width: 70vw; 

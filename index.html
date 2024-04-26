@@ -7,22 +7,20 @@ permalink: /
 
     <h1> About me</h1>    
 
-    I embarked on my data science journey after graduating with a specialization in computer graphics, driven by a keen interest in machine learning and data visualization. Currently enhancing my skills through Kaggle projects, I’m exploring diverse data analysis techniques and machine learning algorithms. Despite being at the early stages of my career, my passion lies in unraveling the stories hidden within data and refining my expertise in both visualization and data preprocessing.
-</br></br>
-    I aim to become a versatile data scientist, blending my graphics background with advanced data science tools. I enjoy both collaborative and independent work and have experience with agile methodologies, particularly scrum. My goal is to contribute to innovative projects that push the boundaries of data science and learning.
-
-
+    I am a data science enthusiast with a background in computer graphics, actively enhancing my expertise through diverse projects and continuous study. My academic foundation and practical experience have cultivated a deep passion for machine learning and data visualization. I am dedicated to deciphering complex data to reveal compelling narratives. As a proactive learner, I excel in both team-oriented and independent environments, eager to contribute to cutting-edge data science innovations.
     <div class="header">
-    <img height="20" style="margin: 0;" src="{{ site.baseurl }}/assets/images/job.png">
-    <h2 style="margin: 0.5rem;" >EXPERIENCES</h2>
-    </div>
-    <div style="display: flex; justify-content: space-between;">
-    <div>JavaScript Programmer</div>
-    <div>2018</div>
-    </div>
-    <div style="color:gray;"> Czech Technical University in Prague </div>
+        <img height="20" style="margin: 0;" src="{{ site.baseurl }}/assets/images/edu.png">
+        <h2 style="margin: 0.5rem;" >SKILLS</h2>
+        </div>
 
-    Developed and optimized web-based animations for molecular structures, focusing on the Singlet Fission Rate project. Achieved optimized packing of molecular pairs, using ethylene as a model, to enhance the educational and interactive experience of the web program.
+
+        Python: Proficiency in data science libraries (Scikit-learn, PyTorch, Hugging Face, Pandas, NumPy); experienced in Jupyter Notebook for project development.
+        C++: Solid background in game development; utilized extensively during academic projects.
+        C#: Used in game development and academic projects.
+        JavaScript: Developed interactive web showcases and integrated web assembly for dynamic web applications.
+        APIs: Proficient in using REST APIs to fetch and manipulate data for web-based applications.
+
+
 
     <div class="header">
     <img height="20" style="margin: 0;" src="{{ site.baseurl }}/assets/images/edu.png">
@@ -30,13 +28,21 @@ permalink: /
     </div>
 
     <div style="display: flex; justify-content: space-between;">
+        <div style="font-weight: bold;">Data Science Route</div>
+        <div>2023 - present</div>
+    </div>
+    <div> 
+        Working on projects to improve and gain knowledge specific to data scence field
+    </div>
+    </br>
+    <div style="display: flex; justify-content: space-between;">
         <div style="font-weight: bold;">MSc in Computer Science</div>
         <div>2021 - 2023</div>
     </div>
     <div> 
         Czech Technical University in Prague
     </div>
-</br>
+    </br>
     <div style="display: flex; justify-content: space-between;">
         <div style="font-weight: bold;">BSc in Computer Science</div>
         <div>2018 - 2021</div>
@@ -45,6 +51,74 @@ permalink: /
         Czech Technical University in Prague
     </div>
 
+    <div class="header">
+        <img height="20" style="margin: 0;" src="{{ site.baseurl }}/assets/images/ds.png">
+        <h2 style="margin: 0.5rem;" >PROJECTS</h2>
+    </div>
+
+   
+
+{% include projectDesc.html 
+    name="Sentiment Analysis for Amazon Products"
+    source="https://www.kaggle.com/code/lachimolalala/understanding-ratings-through-sentiment"
+    tools="Python, NRCLex, Scikit-learn, NLTK, WordCloud, Transformers" 
+    %}
+  <ul>
+       <li>Analyzed Amazon's toy category to uncover the impact of seller information, product descriptions, and customer reviews on product ratings. </li>
+       <li>Analyzed the relationship between textual content and ratings, providing actionable insights for sellers to optimize product offerings. </li>
+       <li>Revealed key sentiment and emotional factors influencing customer reviews and ratings, suggesting strategies for enhancing overall product quality and customer satisfaction.</li>
+</ul>
+
+
+{% include projectDesc.html 
+    name="Music Sheet Deblurring Model "
+    source="https://gitlab.com/games6441628/music-sheet-unblur"
+    tools="Python, PyTorch, CNN" 
+ %}
+<ul>
+   <li>Constructed a unique dataset of 76,000 image pairs using Gaussian blur to simulate image degradation. </li>
+   <li>Developed a CNN model to deblur images of music sheets, aimed at restoring clarity to musical notations. </li>
+   <li> The model effectively corrects minor blurs, showcasing readiness for real-world application and potential for adaptation to varied music note sizes. </li>
+ 
+</ul>
+
+
+{% include projectDesc.html 
+    name="Anime Recommendation Systems"
+    source="https://www.kaggle.com/code/lachimolalala/anime-recommendation-system"
+    tools="Python, TF-IDF, CountVectorizer, Numpy, Pandas, Scikit-learn" 
+ %}
+<ul>
+   <li>Developed four distinct anime recommender systems: one harnessing TF-IDF for matching by plot similarities, another employing CountVectorizer to analyze various anime characteristics.  <br> </li>
+   <li>Implemented Pearson and Cosine collaborative filtering techniques to align suggestions with user tastes. <br></li>
+   <li> Evaluated all systems using real-world user data acquired directly from MyAnimeList's API.</li>
+</ul>
+
+
+{% include projectDesc.html 
+    name="Visualization of Neural Networks"
+    source="https://gitlab.com/games6441628/visualization-of-nn"
+    tools="JavaScript, Python, PCA, t-SNE, UMAP" 
+    %}
+<ul>
+    <li> Created an interactive web visualization for MNIST dataset analysis using dimensionality reduction, highlighting neural network accuracy. </li>
+    <li> Provided intuitive controls for users to isolate data points, assess correct/incorrect predictions, and view digit classifications. </li>
+    <li> Featured a dynamic, clickable interface to explore prediction details and neural network confidence levels for each digit.</li>
+</ul>
+
+
+    <div class="header">
+        <img height="20" style="margin: 0;" src="{{ site.baseurl }}/assets/images/job.png">
+        <h2 style="margin: 0.5rem;" >EXPERIENCES</h2>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+        <div>JavaScript Programmer</div>
+        <div>2018</div>
+    </div>
+    <div style="color:gray;"> Czech Technical University in Prague </div>
+
+        Developed and optimized web-based animations for molecular structures, focusing on the Singlet Fission Rate project. Achieved optimized packing of molecular pairs, using ethylene as a model, to enhance the educational and interactive experience of the web program.
+    
     <div class="header">
     <img height="20" style="margin: 0;" src="{{ site.baseurl }}/assets/images/cert.png">
     <h2 style="margin: 0.5rem;" >CERTIFICATIONS</h2>

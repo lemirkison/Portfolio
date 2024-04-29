@@ -45,7 +45,12 @@ body {
     margin-bottom: 2vh;
 
 }
-
+.jobplace{
+    margin-bottom: 2vh;
+}
+.projectlink:hover {
+    border-bottom: 2px solid #4192D8; /* Specify the style as 'solid' */
+}
 
 @media (max-width: 768px) { /* small screen */
     .content {
@@ -55,5 +60,45 @@ body {
     }
     .responsiveImg {
         width: 70vw; 
+    }
+}
+
+@media print {
+    .sidebar{
+        width: 20vw;
+        height: 400px;
+        float: left;
+        margin-right: 20px;
+        position: absolute;
+        left: 5vw;
+    }
+    .content{
+        margin-left: 5vw;
+        width: auto; 
+        overflow: hidden; 
+        text-align: justify;
+        clear: both;
+    }
+ 
+    .header{
+        margin-top: 1vh;
+        margin-bottom: 0.5vh;
+
+    }
+    .aboutme{
+        margin: 1vh;
+    }
+    .mainPage{
+        margin-bottom: 2vh;
+        padding-bottom: 2vh;
+        
+    }
+    .clear {
+        clear: both;
+    }
+    .startdiv {
+        width: 65vw;
+        margin-left: 23vw;
+        margin-bottom: 2vh;
     }
 }
